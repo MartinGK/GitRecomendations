@@ -24,39 +24,39 @@
     <script>
       const gitArray = [
         {
-          name: "git clone",
+          title: "git clone",
           desc: "clona un repositorio online a tu local",
         },
         {
-          name: "git add",
+          title: "git add",
           desc: "agrega un archivo a la lista de archivos a guardar",
         },
         {
-          name: "git commit",
+          title: "git commit",
           desc: "es el equivalente a guardar los combios que hiciste",
         },
         {
-          name: "git status",
+          title: "git status",
           desc: "muestra un status de tus archivos a guardar",
         },
         {
-          name: "git push",
+          title: "git push",
           desc: "sube los cambios al repositorio online",
         },
         {
-          name: "git merge",
+          title: "git merge",
           desc: "combina dos repositorios de manera local",
         },
         {
-          name: "recomendacion",
+          title: "recomendacion",
           desc: 'Algunos commandos mas a investigar son: stash, cherry-pick, revert, reset,--amend, mas en <a href="https://www.atlassian.com/git/tutorials/undoing-changes">este link</a>',
         },
         {
-          name: "Flex Game",
+          title: "Flex Game",
           desc: '<a href="https://flexboxfroggy.com/">Flex Frog</a> 🐸',
         },
         {
-          name: "Grid Game",
+          title: "Grid Game",
           desc: '<a href="https://flexboxfroggy.com/">Grid Garden</a> 🧑🏻‍🌾',
         },
       ];
@@ -65,7 +65,7 @@
         document.getElementById("flex-content").innerHTML += `
                     <div class="card shadow-lg bg-warning-subtle" >
                         <div class="card-body">
-                            <h5 class="card-title">${gitArray[i].name}</h5>
+                            <h5 class="card-title">${gitArray[i].title}</h5>
                             <p class="card-text">${gitArray[i].desc}</p>
                         </div>
                     </div>
