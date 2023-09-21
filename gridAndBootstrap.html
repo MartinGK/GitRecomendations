@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body" className="">
+
+    
+  </body>
+  <script>
+    [{
+        name: "git clone",
+        desc: "clona un repositorio online a tu local"
+    },{
+        name: "git add",
+        desc: "agrega un archivo a la lista de archivos a guardar"
+    },{
+        name: "git commit",
+        desc: "es el equivalente a guardar los combios que hiciste"
+    },{
+        name: "git status",
+        desc: "muestra un status de tus archivos a guardar"
+    },{
+        name: "git push",
+        desc: "sube los cambios al repositorio online"
+    },{
+        name: "git merge",
+        desc: "combina dos repositorios de manera local"
+    },{
+        name: "recomendacion",
+        desc: "Algunos commandos mas a investigar son: stash, cherry-pick, revert, reset,--amend, mas en <a href=\"https://www.atlassian.com/git/tutorials/undoing-changes\">este link<a/>"
+    }].map(({name, desc}) => {
+        document.getElementById("body").innerHTML += `
+            <div class="card shadow-lg" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">${desc}</p>
+                </div>
+            </div>
+        `;
+      });
+  </script>
+</html>
